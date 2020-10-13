@@ -1,0 +1,54 @@
+Yes it is possible to run a C/C++ program without the main()
+
+There are many methods.I know quiet few of them.
+
+Here goes the code for that :
+
+1)Using Macros
+
+#include<stdio.h>  
+#define fun main  
+int fun(void)  
+{  
+ printf("Hello World");  
+ return 0;  
+} 
+2)using augumented macro
+
+#include<stdio.h>  
+#define begin(m,a,i,n) m##a##i##n  
+#define start begin(m,a,i,n)  
+void start() {  
+ printf("HelloWorld");  
+} 
+3)Modify the entry point during compilation
+
+#include<stdio.h>  
+#include<stdlib.h>  
+// entry point function  
+int nomain();   
+void _start(){  
+ // calling entry point  
+ nomain();   
+ exit(0);  
+}  
+int nomain()  
+{  
+ puts("HelloWorld");  
+ return 0;  
+}  
+4)Using _start()
+
+#include <stdlib.h> 
+void _start() { 
+ int ret = my_main(); 
+  exit(ret);  
+} 
+int my_main() { 
+ puts("This is a program without a main() function!"); 
+  return 0;  
+}
+
+There are many more methods of doing this.
+
+Hope you find this useful.
