@@ -1,2 +1,3 @@
-# hackingForBeginners
-Hack for the hacktoberfest. Contribute anything meaning full.
+# Showcase your Mini Projects, Articles you wrote etc. here
+Contribute anything meaningful here.
+Hacktoberfest opt-in repo
