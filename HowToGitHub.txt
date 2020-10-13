@@ -1,0 +1,28 @@
+To understand GitHub, you must first have an understanding of Git.
+
+Git is an open-source version control system that was started by Linus Torvalds—the same person who created Linux. Git is similar to other version control systems—Subversion, CVS, and Mercurial to name a few.
+
+So, Git is a version control system, but what does that mean? When developers create something (an app, for example), they make constant changes to the code, releasing new versions up to and after the first official (non-beta) release.
+
+Version control systems keep these revisions straight, storing the modifications in a central repository. This allows developers to easily collaborate, as they can download a new version of the software, make changes, and upload the newest revision. Every developer can see these new changes, download them, and contribute.
+	
+GitHub is a website and service that we hear geeks rave about all the time, yet a lot of people don’t really understand what it does. Want to know what all the GitHub hubbub is about? Read on to find out.
+
+Here are the commands which could help you to get started with github.
+
+To upload a new project in a new repo:
+1. Make a new repo in your profile at www.github.com
+2. Select the Project from your desktop. Right CLick and select git bash here.
+3. In the git terminal enter the following commands:
+	> git init
+	> git add . ( . adds all the files to the project. You can also select some other commands)
+	> git commit -m "Your Text"
+	> git status (to check the status i.e all the changes that have been made in the files like so and similar details )
+	> git remote add origin *Your Repo Url*
+	> git push origin master  (Uploads all the files to the Repo)
+4.Other commands to use git in realTime
+	>git branch   ( to check all the available branches or copies of code)
+	>git branch branchname ( to create a new branch i.e a complete new copy of the existing code)
+	>git checkout branchname ( to go to a specific copy of the code )
+	>git merge master (to save changes from your current branch to a new branch which is in this case the master branch)
+5.In case of conflicts check the conflicts and remove the non useful code and do the commit and push again.
